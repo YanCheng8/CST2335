@@ -17,6 +17,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+
+        android:id="@+id/text_EmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="login name"
@@ -37,6 +39,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity ="center"
+        android:text="Login" />
 
 
 </LinearLayout>
