@@ -46,12 +46,14 @@ public class ListItemsActivity extends Activity {
         sw1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if(compoundButton.isChecked()){
-                    text = "Switch is On";
+          //          text = "Switch is On";
+                      text = getResources().getString(R.string.switch_On);
                     duration = Toast.LENGTH_SHORT;
 
                 }
                 else{
-                    text = "Switch is Off";
+         //           text = "Switch is Off";
+                    text = getResources().getString(R.string.switch_Off);
                     duration = Toast.LENGTH_LONG;
                 }
 
@@ -78,8 +80,8 @@ public class ListItemsActivity extends Activity {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User clicked OK button
                                 Intent resultIntent = new Intent(  );
-                  //              resultIntent.putExtra("Response", R.string.response_message);
-                                resultIntent.putExtra("Response", "Here is my response");
+                               resultIntent.putExtra("Response", getResources().getString(R.string.response_message));
+                  //              resultIntent.putExtra("Response", "Here is my response");
                                 setResult(Activity.RESULT_OK, resultIntent);
                                 finish();
                             }
