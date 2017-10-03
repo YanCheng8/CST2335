@@ -24,4 +24,7 @@
     <string name="switch_On">开关打开</string>
     <string name="switch_Off">开关关闭</string>
 
+    <string name="StartchatButtonText">开始聊天</string>
+    <string name="send_message">发送</string>
+
 </resources>

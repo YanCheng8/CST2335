@@ -29,6 +29,18 @@ public class StartActivity extends Activity {
 
         } );
 
+        Button st1 = (Button)findViewById(R.id.startchat) ;
+        st1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+
+                //Start New Activity
+               Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(intent);
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+
+            }
+        });
 
     }
 
