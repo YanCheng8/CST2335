@@ -1,5 +1,31 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
+
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
+
+    <string name="login_message">login</string>
+    <string name="password_message">password</string>
+
+    <string name="radioButton_message">RadioButton</string>
+    <string name="checkBox_message">CheckBox</string>
+    <string name="switch_message">What does this do?</string>
+    <string name="imageBox_message">ImageBox</string>
+
+    <string name="DefaultEmail"></string>
+
+    <string name="response_message">Here is my response</string>
+
+    <string name="dialog_message">Please Choose Your Answer </string>
+    <string name="dialog_title">AndroidLab3 </string>
+    <string name="ok"> ok</string>
+    <string name="cancel">cancel </string>
+
+    <string name="switch_On">Switch is On</string>
+    <string name="switch_Off">Switch is Off</string>
+
+    <string name="StartchatButtonText">Start Chat </string>
+
+    <string name="send_message">Send</string>
+
 </resources>
