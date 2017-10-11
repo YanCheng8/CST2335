@@ -44,8 +44,8 @@ public class ChatWindow extends Activity {
   //      chatDbHelper = new ChatDatabaseHelper(this);
         final SQLiteDatabase db = chatDbHelper.getWritableDatabase();
 
-        Cursor cursor = db.query("ChatInfo", null, null, null, null, null, null);
-//        Cursor cursor = db.rawQuery("select * from ChatInfo",null);
+     //   Cursor cursor = db.query("ChatInfo", null, null, null, null, null, null);
+        Cursor cursor = db.rawQuery("select * from ChatInfo", null);
 
         if(cursor.moveToFirst()) {
             while (!cursor.isAfterLast()) {

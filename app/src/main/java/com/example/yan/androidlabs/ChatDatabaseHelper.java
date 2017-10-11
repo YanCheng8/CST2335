@@ -11,7 +11,7 @@ import android.util.Log;
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME= "Message.db";
-    private static final int VERSION_NUM = 2;
+    private static final int VERSION_NUM = 1;
     public static final String KEY_ID = "id";
     public static final String KEY_MESSAGE = "name";
     public static String TABLE_NAME = "ChatInfo";
@@ -51,6 +51,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         onUpgrade(db, oldVersion, newVersion);
+        Log.i(ACTIVITY_NAME, "Calling onDowngrade, oldVersion=" + oldVersion + " newVersion=" + newVersion);
     }
 
     @Override
