@@ -29,8 +29,8 @@ public class LoginActivity extends Activity {
         et1 = (EditText)findViewById(R.id.text_EmailAddress);
 
 
-  //      SharedPreferences sharedPref = getSharedPreferences("activity_login", Context.MODE_PRIVATE);
-        sharedPref = getPreferences(Context.MODE_PRIVATE);
+        sharedPref = getSharedPreferences("activity_login", Context.MODE_PRIVATE);
+  //      sharedPref = getPreferences(Context.MODE_PRIVATE);
         nameValue = sharedPref.getString("DefaultEmail", "email@domain.com");
 //        String nameValue = sharedPref.getString(R.string."text_EmailAddress");
         et1.setText(nameValue);
