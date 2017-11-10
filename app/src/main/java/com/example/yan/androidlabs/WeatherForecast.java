@@ -35,7 +35,6 @@ public class WeatherForecast extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather_forecast);
-
         pBar = (ProgressBar)findViewById(R.id.progress_bar);
         pBar.setVisibility(View.VISIBLE);
         pBar.setProgress(0);
