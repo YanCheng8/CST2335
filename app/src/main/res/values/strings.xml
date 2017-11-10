@@ -28,4 +28,11 @@
 
     <string name="send_message">Send</string>
 
+    <string name="current_temp">Current Temp</string>
+    <string name="min_temp">Min Temp</string>
+    <string name="max_temp">Max Temp</string>
+    <string name="weather_forecast">Weather Forecast</string>
+
+
+
 </resources>

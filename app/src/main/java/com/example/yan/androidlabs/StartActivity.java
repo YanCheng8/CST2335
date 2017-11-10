@@ -29,13 +29,23 @@ public class StartActivity extends Activity {
 
         } );
 
+        Button bt_weather = (Button)findViewById(R.id.button_weather);
+        bt_weather.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                //          startActivity(new Intent(StartActivity.this, WeatherForecast.class));
+                startActivityForResult(new Intent(StartActivity.this, WeatherForecast.class), 10);
+
+            }
+
+        } );
+
         Button st1 = (Button)findViewById(R.id.startchat) ;
         st1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
 
                 //Start New Activity
-               Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
                 startActivity(intent);
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
 
@@ -45,9 +55,9 @@ public class StartActivity extends Activity {
     }
 
     protected void onActivityResult(int requestCode, int responseCode, Intent data)  {
-      if (requestCode == 10)  {
-          Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
-      }
+        if (requestCode == 10)  {
+            Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
+        }
 
         if(responseCode==Activity.RESULT_OK){
             //String result = data.getExtras().getString("Response");
