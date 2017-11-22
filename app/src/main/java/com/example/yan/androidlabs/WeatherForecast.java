@@ -127,7 +127,7 @@ public class WeatherForecast extends Activity {
                     if (tag.equals("temperature")) {
                         stringValue = parser.getAttributeValue(null, "value");
                         publishProgress(25);
-                        try{Thread.sleep(1000);}
+                        try{Thread.sleep(1000);}//SystemClock.sleep(1000);
                         catch (InterruptedException e){e.printStackTrace();}
 
                         stringMin = parser.getAttributeValue(null, "min");
