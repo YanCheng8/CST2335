@@ -185,9 +185,9 @@ public class WeatherForecast extends Activity {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            currentT.setText(stringValue);
-            minT.setText(stringMin);
-            maxT.setText(stringMax);
+            currentT.setText("Current Temp: " + stringValue + " °C");
+            minT.setText("Min Temp: " + stringMin + " °C");
+            maxT.setText("Max Temp: " + stringMax + " °C");
             imv1.setImageBitmap(image);
             pBar.setVisibility(View.INVISIBLE);
         }
