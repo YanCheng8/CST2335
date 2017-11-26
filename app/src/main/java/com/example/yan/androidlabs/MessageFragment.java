@@ -27,7 +27,7 @@ public class MessageFragment extends Fragment {
     public static MessageFragment newInstance(ChatWindow chatWindow) {
         MessageFragment fragment = new MessageFragment();
         Bundle args = new Bundle();
-        fragment.chatWindow = chatWindow;
+        fragment.chatWindow = chatWindow;//to judge chatWindow is null or not
         fragment.setArguments(args);
         return fragment;
     }
