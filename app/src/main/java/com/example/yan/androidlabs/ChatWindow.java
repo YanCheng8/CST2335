@@ -82,7 +82,7 @@ public class ChatWindow extends Activity {
                     //messageFragment.myText2.setText(messageId);
                     messageFragment.setArguments(bundle);//Supply the construction arguments for this fragment.
 
-                    getFragmentManager().beginTransaction().add(R.id.frameLayout, messageFragment).commit();//in layout-sw600dp//activity_chat_windows.xml
+                    getFragmentManager().beginTransaction().replace(R.id.frameLayout, messageFragment).commit();//in layout-sw600dp//activity_chat_windows.xml
                     //FragmentTransaction ft = getFragmentManager().beginTransaction();
                     //abstract FragmentTransaction	add(int containerViewId, Fragment fragment)   Calls add(int, Fragment, String) with a null tag.
                     //Add a fragment to the activity state.
