@@ -54,7 +54,10 @@
         <activity android:name=".ChatWindow" />
         <!-- <activity android:name=".ChatDatabaseHelper" /> -->
         <activity android:name=".WeatherForecast" />
-        <activity android:name=".MessageDetails"></activity>
+        <activity android:name=".MessageDetails" />
+        <activity
+            android:name=".TestToolbar"
+            android:label="@string/title_activity_test_toolbar"></activity>
     </application>
 
 </manifest>
