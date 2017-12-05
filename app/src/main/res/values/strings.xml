@@ -43,4 +43,10 @@
     <string name="title_activity_test_toolbar">TestToolbar</string>
 
 
+
+
+    <string name="action_settings"> action_settings</string>
+
+
+
 </resources>
