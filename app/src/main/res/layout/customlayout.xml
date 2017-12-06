@@ -11,7 +11,7 @@
         android:background="#FFFFBB33"
         android:contentDescription="@string/app_name"
         android:scaleType="center"
-        android:src="@drawable/icons8_music_50" />
+        android:src="@drawable/icons8_map_50" />
         <EditText
             android:id="@+id/messagename"
             android:layout_width="match_parent"
