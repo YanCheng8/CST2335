@@ -47,6 +47,14 @@
 
     <string name="action_settings"> action_settings</string>
 
+    <string name="notification"> This is a notification for the toolbar</string>
+
+    <string name="dialogTitle"> Do you want to go back?</string>
+    <string name="customDialogTitle"> This is a custom dialog</string>
+
+    <string name="customLayout">New Message</string>
+
+
 
 
 </resources>
