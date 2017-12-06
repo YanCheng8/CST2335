@@ -5,9 +5,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
 
 public class TestToolbar extends AppCompatActivity {
 
@@ -18,7 +21,7 @@ public class TestToolbar extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+  /*      FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +29,7 @@ public class TestToolbar extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+*/
     }
 
     @Override
@@ -42,11 +46,25 @@ public class TestToolbar extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        switch (id) {
+            case R.id.action_one:
+                Log.d("Toolbar", "Option 1 selected");
+                break;
+
+            case R.id.action_two:
+                Log.d("Toolbar", "Option 1 selected");
+                break;
+
+            case R.id.action_three:
+                Log.d("Toolbar", "Option 1 selected");
+                break;
+        }
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+    /*    if (id == R.id.action_settings) {
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item);*/
+    return true;
     }
 }
