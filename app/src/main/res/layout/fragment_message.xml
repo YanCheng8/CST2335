@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yan.androidlabs.MessageFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Message_content"
+        android:id="@+id/textViewvv1v"
+        android:gravity="right"
+        android:layout_gravity="left|top"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Message_ID"
+        android:id="@+id/textViewvv2v"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Delete_Message"
+        android:id="@+id/deletemsgbutton2"
+        android:layout_gravity="left|bottom" />
+
+</FrameLayout>
